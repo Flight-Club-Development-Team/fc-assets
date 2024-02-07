@@ -52,6 +52,7 @@
    border:  solid 1px var(--earth-blue);
    border-radius: 50%;
    background: no-repeat url("../img/Home-Page-Aircraft 5.png") 65% 50%, var(--light-blue);
+   background-size:  calc(var(--size)*0.88) auto;
 }
 
 
@@ -66,6 +67,23 @@
 
   background: no-repeat url("https://ef2ee2f55bc40d7aec0e00db7a38b5a0.cdn.bubble.io/f1707167866379x880666383452546800/Subtract.svg?_gl=1*qedbfe*_gcl_au*NDYyMzMyMzI2LjE3MDQzMDQ0OTE.*_ga*MTAwMjc4ODg1My4xNzA0MzA0NDkx*_ga_BFPVR2DEE2*MTcwNzE0MDkzMS4yMy4xLjE3MDcxNjg2NjguNTkuMC4w") center;
   background-size: 38px auto;
+
+  font-weight:bold;
+  transform:rotate(var(--delay)) translate(var(--o)) 
+    rotate(calc(var(--delay) * -1));
+}
+
+.rotating-icon-mobile {
+  position: absolute;
+  left: 91px;
+  top: 95px;
+  width:50px;
+  height:50px;
+  padding: 2px;
+  border-radius: 50%;
+
+  background: no-repeat url("https://ef2ee2f55bc40d7aec0e00db7a38b5a0.cdn.bubble.io/f1707167866379x880666383452546800/Subtract.svg?_gl=1*qedbfe*_gcl_au*NDYyMzMyMzI2LjE3MDQzMDQ0OTE.*_ga*MTAwMjc4ODg1My4xNzA0MzA0NDkx*_ga_BFPVR2DEE2*MTcwNzE0MDkzMS4yMy4xLjE3MDcxNjg2NjguNTkuMC4w") center;
+  background-size: 19px auto;
 
   font-weight:bold;
   transform:rotate(var(--delay)) translate(var(--o)) 
