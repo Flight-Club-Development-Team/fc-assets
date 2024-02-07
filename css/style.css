@@ -12,8 +12,8 @@
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   width: 1426px;
-   height: 1426px;
+   width: var(--size);
+   height: var(--size);
    /* dashed border */
    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='713' ry='713' stroke='%236F88C263' stroke-width='1' stroke-dasharray='14' stroke-dashoffset='100' stroke-linecap='butt'/%3e%3c/svg%3e");
 
@@ -24,8 +24,8 @@
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   width: 1066px;
-   height: 1066px;
+   width:var(--size);
+   height: var(--size);
    /* dashed border */
    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='533' ry='533' stroke='%236F88C296' stroke-width='1' stroke-dasharray='14' stroke-dashoffset='100' stroke-linecap='butt'/%3e%3c/svg%3e");
    align-self: center;
@@ -36,8 +36,8 @@
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   width: 768px;
-   height: 768px;
+   width: var(--size);
+   height: var(--size);
    /* dashed border */
    border: 1px solid rgba(111, 136, 194, 0.8);
    border-radius: 50%;
@@ -46,8 +46,8 @@
 
 .dashed-circle-inner {
   position:  relative;
-   width: 517px;
-   height: 517px;
+   width: var(--size);
+   height: var(--size);
    /* dashed border */
    border:  solid 1px var(--earth-blue);
    border-radius: 50%;
