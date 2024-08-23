@@ -111,3 +111,59 @@
 }
     
 }
+
+#custom-checkbox label{
+       display: inline;
+       margin-left: 5px;
+       vertical-align: middle;
+}
+    
+input[type="checkbox"] {
+
+ vertical-align: middle;
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  /* Remove most all native input styles */
+  appearance: none;
+  /* For iOS < 15 */
+  background-color: var(--form-background);
+  /* Not removed via appearance */
+  margin: 0;
+
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid currentColor;
+  border-radius: 0.15em;
+
+  display: inline-grid;
+  place-content: center;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 0.95em;
+  height: 0.95em;
+  clip-path: polygon(evenodd, 0% 0%, 100% 0%, 100% 100%, 0% 100%, 46.19% 87.98%, 6.37% 61.67%, 14.09% 49.99%, 41.2% 65.77%, 78.34% 15.24%, 92.33% 23.28%, 46.19% 87.98%, 0% 100%);
+  transform: scale(0);
+  box-shadow: inset 1em 1em var(--form-control-color);
+  /* Windows High Contrast Mode */
+  background-color: currentColor;
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+input[type="checkbox"]:focus {
+  outline: max(2px, 0.15em) solid currentColor;
+  outline-offset: max(2px, 0.15em);
+}
+
+input[type="checkbox"]:disabled {
+  --form-control-color: var(--form-control-disabled);
+
+  color: var(--form-control-disabled);
+  cursor: not-allowed;
+
