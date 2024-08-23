@@ -118,7 +118,7 @@
        vertical-align: middle;
 }
     
-input[type="checkbox"] {
+#custom-checkbox input[type="checkbox"] {
 
  vertical-align: middle;
   /* Add if not using autoprefixer */
@@ -141,7 +141,7 @@ input[type="checkbox"] {
   place-content: center;
 }
 
-input[type="checkbox"]::before {
+#custom-checkbox input[type="checkbox"]::before {
   content: "";
   width: 0.95em;
   height: 0.95em;
@@ -152,16 +152,16 @@ input[type="checkbox"]::before {
   background-color: currentColor;
 }
 
-input[type="checkbox"]:checked::before {
+#custom-checkbox input[type="checkbox"]:checked::before {
   transform: scale(1);
 }
 
-input[type="checkbox"]:focus {
+#custom-checkbox input[type="checkbox"]:focus {
   outline: max(2px, 0.15em) solid currentColor;
   outline-offset: max(2px, 0.15em);
 }
 
-input[type="checkbox"]:disabled {
+#custom-checkbox input[type="checkbox"]:disabled {
   --form-control-color: var(--form-control-disabled);
 
   color: var(--form-control-disabled);
